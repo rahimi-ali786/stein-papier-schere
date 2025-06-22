@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stein Papier Schere</title>
+    <link rel="stylesheet" href="styles/stein-papier-schere.css">
+  </head>
+  <body>
+    <p class="titel">Stein Papier Schere</p>
+    <button class="zug-knopf js-stein-knopf">
+      <img src="images/stein-emoji.png" class="zug-icon">
+    </button>
+
+    <button class="zug-knopf js-papier-knopf">
+      <img src="images/papier-emoji.png" class="zug-icon">
+    </button>
+
+    <button class="zug-knopf js-schere-knopf">
+      <img src="images/schere-emoji.png" class="zug-icon">
+    </button>
+
+    <p class="js-ergebnis ergebnis"></p>
+    <p class="js-zuege"></p>
+    <p class="js-punktestand punktestand"></p>
+
+    <button onclick="
+      punktestand.siege = 0;
+      punktestand.niederlagen = 0;
+      punktestand.unentschieden = 0;
+      localStorage.removeItem('punktestand');
+      aktualisierePunktestand();
+    " class="reset-punktestand-knopf js-reset-punktestand-knopf">Punktestand zurücksetzen</button>
+
+    <button class="auto-spielen-knopf" onclick="
+      autoSpielen();
+    ">Auto Spielen</button>
+    
+    <script src="scripts/stein-papier-schere.js"></script>
+  </body>
+</html>
