@@ -24,3 +24,8 @@
 ##  - p : Papier
 ##  - c : Schere
 
+### Vorschau
+
+stein-papier-schere(`stein-papier-schere.html`);
+![stein-papier-schere](screenshot/vorschau.png)
+
