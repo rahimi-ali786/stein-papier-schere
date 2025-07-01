@@ -29,3 +29,5 @@
 stein-papier-schere(`stein-papier-schere.html`);
 ![stein-papier-schere](screenshot/vorschau.png)
 
+stein-papier-schere(`stein-papier-schere.html`);
+![stein-papier-schere](screenshot/vorschau2.png)
